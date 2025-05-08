@@ -10,8 +10,8 @@ declare global {
 	}
 	
 	const $ui : IUiJS;
-	const $utils :IUtils;
-	const $router :IRouter;
+	const $utils : IUtils;
+	const $router : IRouter;
 
 }
 

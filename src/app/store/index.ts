@@ -1,6 +1,7 @@
 import { configureAppStore } from '@nova/ui-library';
 import { setRootReducer } from '@nova/ui-library/store';
 import { combineReducers } from '@reduxjs/toolkit';
+import cmReducer from '@/shared/store';
 
 const cmRootReducer = () : any => {
 	return setRootReducer (
