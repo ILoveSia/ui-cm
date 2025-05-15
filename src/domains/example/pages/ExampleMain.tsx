@@ -1,3 +1,4 @@
+//domains > example > pages > ExampleMain.tsx
 
 import type { IComponent } from '@nova/ui-library/store';
 
@@ -11,7 +12,7 @@ interface IExampleMainProps {
 
 const ExampleMain: IComponent<IExampleMainProps> = (): JSX.Element => {
 	const { data: sData, fetch: sFetch } = useReduxAPI('exampleStore/dictionaryCode');
-	const { data: testData, setData: setTeestData } = useReduxState('exampleStore/testState');
+	const { data: testData, setData: setTestData } = useReduxState('exampleStore/testState');
 	
 	const handlerApi = () => {
 		sFetch({
@@ -43,7 +44,7 @@ const ExampleMain: IComponent<IExampleMainProps> = (): JSX.Element => {
 				<br/>
 				<div> {JSON.stringify(testData.value)}</div>
 				<br/>
-				<XButton onClick={}> state 저장 </XButton>
+				<XButton onClick={handlerSetData}> state 저장 </XButton>
 		</>
 	);
 }
